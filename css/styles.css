@@ -1,234 +1,289 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-wrap: break-all !important;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
-nav{
+.small-title{
+    font-size: 1.5em;
+}
+nav {
     background-color: #00000055;
     color: #fff;
     padding: 2rem;
 }
 
-nav a{
+nav a {
     float: left;
     text-decoration: none;
     font-size: 25px;
     color: #fff;
 }
-nav ul{
+
+nav ul {
     float: right;
     list-style: none;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     padding: 5px;
 }
-header{
+
+.navbar-nav li a{
+    color: #fff !important; 
+    font-size: 18px;
+}
+.site-logo {
+    width: 10%;
+    height: auto;
+}
+
+.navbar-toggler i {
+    color: #fff;
+}
+.bg-none{
+    background: none;
+}
+/*------header css--------------*/
+header {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/img/51110.jpg);
-    background-size: cover;
+    background-image: url(../img/logo/light-logo-opacity.png);
+    background-size: 70%;
     background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-position: center;
 }
-
-.header-text{
+ 
+.header-row{
+    width: 70%;
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
-.header-text h1{
+.web-title {
+    font-size: 6em;
     color: #fff;
-    font-size: 3rem;
-}
-.header-text p{
-    color: #fff;
-}
-.clear{
-    clear: both;
-}
-
-.about{
-    background-color: #8F8A8A;
-    height: 80vh;
-}
-
-.about-text{
-    color: #fff;
-width: 50%;
-margin: 0 auto;
-    
 
 }
 
-.about-text h2{ 
-    font-size: 60px;
-    padding-top: 6rem;
+.highlight {
+    color: #ff4545;
+}
+
+.sneaker-head {
+    width: 100%;
+    height: auto;
     text-align: center;
 }
 
-.about-text p{
-    padding: 2rem;
+/*------header css end--------------*/
+
+/*-----products--------------*/
+
+.products{
+
+ background: none !important;
+}
+.product .card{
+ background-color: #ffffff38;
+}
+
+.products h2{
+    font-size: 3em;
+    color: #fff;
+}
+
+.product-details{
+    text-align: center;
+
+    padding:10px;
+    margin-top: 5px;
+}
+.product-details p{
+    line-height: 0.1px;
     font-size: 16px;
-    line-height: 1.8rem;
-    text-align: center;
+    color: #fff;
 }
-
-.about-skills{
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
-   align-items: center;
-   width: 50%;
-   padding-top: 3%;
-   color: white;
-   margin: 0 auto;
-   
+.product-details .add-to-cart{
+padding: 5px;
+border: none;
+border-radius: 5px;
+font-size: 10px;
+background:linear-gradient(#ff4545, #B44C4C);
+color: #fff;
 }
+/*-----products end--------------*/
+/*--about us style-*/
+.about-us{
 
-.about-skills h3{
-padding-right:5%;
+    background: none !important;
 }
-
-.about-skills_h3--1{
-    border-bottom: 3px solid greenyellow;
-    width:5%;
-    margin-right: 50px;
-}
-
-.portfolio{
-    height: 100vh;
-    padding: 50px 0;
-    text-align: center;
-    color: green;
-    font-size: 60px;
-}
-
-.portfolio_container{
-
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-grid-gap:40px;
-padding: 5%;
-margin-top: 50px;
-
-}
-
-.portfolio h2{
-margin-top: 1%;
-font-size: 60px;
-
-}
-
-.portfolio_img{
+.gradient-box{
+    width: 20em;
+    height: 20em;
+    background:linear-gradient(#ff4545, #B44C4C);
     border-radius: 10px;
-    position: relative;
+    box-shadow: -1px 1px 10px rgb(217, 215, 215);
 }
-
-.portfolio_img img{
-object-fit: cover;
-width: 100%;
-height: 400px;
-border-radius: 10px;
-display: block;
-
+.gradient-box img{
+    width: 120%;
+    height: auto;
 }
-
-.btn-katana{
-    padding: 20px;
-    border: 1px #006c20;
-    background-color: #006c20;
-    border-radius: 10px;
+.about-us p{
+    font-size: 16px;
     color: #fff;
 }
 
-
-.contact{
-   background-color: bisque;
-   height: 100vh;
-   margin-top: 300px;
-   padding: 5%; 
+/*--about us style end-*/
+/*--subscbe section--*/
+.subscribe{
+    background: none !important;
 }
-
-.contact_row{
-display: flex;
-flex-direction: row;
-}
-
-.contact h2{
-font-size: 60px;
-}
-
-.contact-left{
-flex-basis: 35%;
-}
-
-.contact-left p{
-margin-top: 30px;
-}
-
-.contact-left_icons{
-margin-top:15px;
-}
-
-.contact-left_icons a{
-text-decoration: none;
-font-size: 30px;
-margin-right: 15px;
-color: #090909;
-display: inline-block;
-}
-
-.contact-left_icons a:hover{
-
- color: #454545;
- transform: translateY(-5px);
-
-}
-.contact_btn{
-    display: block;
-    margin: 50px auto;
-    border: 1px solid green;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: green;
-    width: fit-content;
-    background-color: #00000000;
-}
-
-.contact_btn:hover {
-  background-color: green;
-  color: #fff;
-}
-
-.contact-right{
-    flex-basis: 60%;
-
-}
-
-.contact-right form{
-    width: 100%;
-}
-
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #141414;
-    padding: 15px;
-    margin: 10PX;
-    color: #4e4d4d00;
-    border-radius: 5px;
-}
-
-footer{
-    text-align: center;
-    padding: 20px;
-    background-color: #141414;
+.subscribe h2{
+    font-size: 3em;
     color: #fff;
+}
+.btn-subscribe{
+    width: 100%;
+    color: #fff;
+    background:linear-gradient(#ff4545, #B44C4C);
+    border: none !important;
+}
+/*--subscbe section end--*/
+
+/*--footer--*/
+.footer{
+    padding: 10px;
+    border-top: 1px solid #fff !important;
+  
+}
+/*--footer end--*/
+
+@media only screen and (max-width:1000px) {
+
+/*------header css--------------*/
+    .col-md-6 .web-title {
+        font-size: 5em;
+        z-index: 1 !important;
+        text-shadow: 2px 2px black;
+    }
+
+    .header-col:nth-child(1) {
+        z-index: 1;
+    }
+
+    .header-col:nth-child(2) .sneaker-head {
+        z-index: 2;
+    }
+/*------header css end--------------*/
+
+/*---products css--------*/
+.products h2{
+    font-size: 2.5em;
+
+}
+/*---products css end--------*/
+}
+
+
+@media only screen and (max-width:800px) {
+    /*------header css--------------*/
+        .col-md-6 .web-title {
+            font-size: 4em;
+    
+        }
+    
+    
+        .header-col:nth-child(2) .sneaker-head {
+            
+            width: 110%;
+            margin-left: 40%;
+        }
+    /*------header css end--------------*/
+
+    /*---products css--------*/
+.products h2{
+    font-size: 2em;
+
+}
+/*---products css end--------*/
+
+    /*---subscribe css--------*/
+    .subscribe h2{
+        font-size: 2em;
+    
+    }
+    /*---subscribe css end--------*/
+}
+
+@media only screen and (max-width:750px) {
+    /*------header css--------------*/
+    .header-col:nth-child(2) .sneaker-head {
+        margin-top: -15em;
+        width: 70%;
+        margin-left: 40%;
+    }
+    /*------header css end--------------*/
+}
+
+@media only screen and (max-width:600px) {
+/*------header css--------------*/
+    .col-md-6 .web-title {
+        font-size: 3em;
+  
+    }
+
+
+    .header-col:nth-child(2) .sneaker-head {
+        margin-top: -10em;
+        width: 80%;
+        margin-left: 40%;
+    }
+/*------header css end--------------*/
+/*--product--*/
+.product-details p{
+    line-height: 0.1px;
+    font-size: 12px;
+    color: #fff;
+    white-space:nowrap;
+}
+/*--product end--*/
+/*--about us--*/
+.about-us p{
+    font-size: 12px;
+    color: #fff;
+}
+
+/*--about us--*/
+    /*---subscribe css--------*/
+    .subscribe h2{
+        font-size: 1.5em;
+    
+    }
+    /*---subscribe css end--------*/
+}
+
+/*-for smaller screen*/
+@media only screen and (max-width:450px) {
+/*------header css--------------*/
+.col-md-6 .web-title {
+    font-size: 2.5em;
+
+}
+
+.header-col:nth-child(2) .sneaker-head{
+    margin-top: -12em;
+    width: 70%;
+    margin-left: 40%;
+}
+/*------header css end--------------*/
+
+
 }
